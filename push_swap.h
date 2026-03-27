@@ -15,5 +15,8 @@ typedef struct s_node{
 } t_node;
 
 
+void	ft_error(t_node **stack_a, t_node **stack_b);
+void	free_stack(t_node **stack);
+
 
 #endif
