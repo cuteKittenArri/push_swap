@@ -25,6 +25,6 @@ void	error_exit(t_node **stack_a, t_node **stack_b)
 		free_stack(stack_a);
 	if (stack_b)
 		free_stack(stack_b);
-	write(1, "Error\n", 6);
+	write(2, "Error\n", 6);
 	exit(1);
 }

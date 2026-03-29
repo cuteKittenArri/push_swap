@@ -28,7 +28,7 @@ The program reads a list of integers as command-line arguments, then outputs the
 
 ### Requirements
 
-- GCC or compatible C compiler
+- CC or compatible C compiler
 - `make`
 - The bundled `libft` library (located in `libft/`)
 
@@ -54,7 +54,7 @@ make re       # recompile from scratch
 
 The program prints the list of operations to stdout, one per line. If the input is already sorted, nothing is printed.
 
-**Error handling:** the program prints `Error` to stdout and exits if the input contains non-integer values, values outside the `int` range, or duplicates.
+**Error handling:** the program prints `Error` to stderr and exits if the input contains non-integer values, values outside the `int` range, or duplicates.
 
 ### Testing
 
