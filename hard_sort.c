@@ -1,5 +1,20 @@
 #include "push_swap.h"
 
+void	hard_sort(t_node **stack_a, t_node **stack_b)
+{
+	int	size;
+
+	size = stack_size(*stack_a);
+	if (size == 2)
+		sa(stack_a);
+	else if (size == 3)
+		sort_3(stack_a);
+	else if (size == 4)
+		sort_4(stack_a, stack_b);
+	else if (size == 5)
+		sort_5(stack_a, stack_b);
+}
+
 static int	min_pos(t_node **stack)
 {
 	t_node	*tmp;
