@@ -24,7 +24,7 @@ $(NAME): $(OFILES) $(LIBFT)
 	$(CC) $(CFLAGS) $(OFILES) $(LIBFT) -o $(NAME)
 
 $(LIBFT):
-	@make -c ./libft
+	@make -C ./libft
 
 %.o: %.c $(HEAD)
 	@$(CC) $(CFLAGS) -c $< -o $@
