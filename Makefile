@@ -13,22 +13,30 @@
 NAME := push_swap
 CC := cc
 CFLAGS := -Wall -Werror -Wextra
-CFILES :=
+CFILES := grandmaster.c error.c hard_sort.c index.c node_utils.c parsing.c
 OFILES := $(CFILES: .c=.o)
 HEAD := push_swap.h
+LIBFT := ./libft/libft.a
 
 all: $(NAME)
 
-$(NAME): $(OFILES)
-	$(CC) $(CFLAGS) $(OFILES)
+$(NAME): $(OFILES) $(LIBFT)
+	$(CC) $(CFLAGS) $(OFILES) $(LIBFT) -o $(NAME)
+
+$(LIBFT):
+	@make -c ./libft
+
+%.o: %.c $(HEAD)
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(OFILES)
+	@make -C ./libft clean
+	@rm -rf $(OFILES)
 
 fclean: clean
-	rm -rf $(NAME)
+	@make -C ./libft fclean
+	@rm -rf $(NAME)
 
 re: fclean all
 
 .PHONY: all clean fclean re
-TODO:

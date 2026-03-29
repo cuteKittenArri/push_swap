@@ -29,7 +29,7 @@ void	radin_sort(t_node **stack_a, t_node **stack_b)
 	int		size;
 	int		max_bits;
 
-	size = get_stack_size(*stack_a);
+	size = stack_size(*stack_a);
 	max_bits = max_bits(stack_a);
 	i = 0;
 	while (i < max_bits)
@@ -43,7 +43,7 @@ void	radin_sort(t_node **stack_a, t_node **stack_b)
 			else
 				pb(stack_a, stack_b);
 		}
-		while (get_stack_size(*stack_b) != 0)
+		while (stack_size(*stack_b) != 0)
 			pa(stack_a, stack_b);
 		i++;
 	}
