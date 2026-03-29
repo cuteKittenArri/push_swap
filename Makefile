@@ -13,7 +13,7 @@
 NAME := push_swap
 CC := cc
 CFLAGS := -Wall -Werror -Wextra
-CFILES := grandmaster.c error.c hard_sort.c index.c node_utils.c parsing.c
+CFILES := grandmaster.c error.c hard_sort.c index.c node_utils.c parsing.c main.c push.c reverse_rotate.c rotate.c swap.c
 OFILES := $(CFILES:.c=.o)
 HEAD := push_swap.h
 LIBFT := ./libft/libft.a

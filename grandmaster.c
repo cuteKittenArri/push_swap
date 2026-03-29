@@ -5,7 +5,7 @@ static int	max_bits(t_node **stack)
 {
 	t_node	*curr_node;
 	int		max_index;
-	int		max_bits;
+	int		max_bit;
 
 	curr_node = *stack;
 	max_index = curr_node->index;
@@ -15,10 +15,10 @@ static int	max_bits(t_node **stack)
 			max_index = curr_node->index;
 		curr_node = curr_node->next;
 	}
-	max_bits = 0;
-	while ((max_index >> max_bits) != 0)
-		max_bits++;
-	return (max_bits);
+	max_bit = 0;
+	while ((max_index >> max_bit) != 0)
+		max_bit++;
+	return (max_bit);
 }
 
 void	radin_sort(t_node **stack_a, t_node **stack_b)
@@ -27,12 +27,12 @@ void	radin_sort(t_node **stack_a, t_node **stack_b)
 	int		i;
 	int		j;
 	int		size;
-	int		max_bits;
+	int		max_bit;
 
 	size = stack_size(*stack_a);
-	max_bits = max_bits(stack_a);
+	max_bit = max_bits(stack_a);
 	i = 0;
-	while (i < max_bits)
+	while (i < max_bit)
 	{
 		j = 0;
 		while (j++ < size)

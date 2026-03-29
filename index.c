@@ -12,7 +12,7 @@ t_node	*get_min(t_node	**stack)
 
 	while (curr_node)
 	{
-		if ((curr_node->index == -1) && (!min_exists) || curr_node->value < min_node->value)
+		if ((curr_node->index == -1) && ((!min_exists) || curr_node->value < min_node->value))
 		{
 			min_node = curr_node;
 			min_exists = 1;
