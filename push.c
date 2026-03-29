@@ -6,7 +6,7 @@ static void	push(t_node **src, t_node **dest)
 	t_node	*tmp;
 	if (!src || !(*src))
 		return ;
-	tmp = src;
+	tmp = *src;
 	*src = tmp->next;
 	tmp->next = *dest;
 	*dest = tmp;
