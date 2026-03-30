@@ -32,11 +32,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	void *dst;
-	const char *a = "mama4321";
-	const void *sorc = a;
+	void		*dst;
+	const char	*a = "mama4321";
+	const void	*sorc = a;
 
 	dst = malloc(8);
 	dst = ft_memcpy(dst, sorc, 8);

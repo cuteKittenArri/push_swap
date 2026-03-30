@@ -61,7 +61,7 @@ static int	ft_intlen(int n)
 /* #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
+int	main(void)
 {
 	char *test = ft_itoa(2147483647);
 	printf("%s", test);

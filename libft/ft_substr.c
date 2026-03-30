@@ -39,7 +39,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /* #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
 	char * s = ft_substr("0123456789", 9, 10);
 

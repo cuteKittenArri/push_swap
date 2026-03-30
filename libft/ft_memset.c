@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t				i;
-	unsigned char		*r;
+	size_t			i;
+	unsigned char	*r;
 
 	r = s;
 	i = 0;
@@ -29,10 +29,10 @@ void	*ft_memset(void *s, int c, size_t n)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	char lol[] = "";
-	void *leer;
+	char	lol[] = "";
+	void	*leer;
 	void	*leer2;
 
 	leer = lol;
@@ -41,6 +41,6 @@ int main(void)
 	//printf("%s\n", (char *)leer2);
 	//printf("%s\n", (char *)memset(leer, 35, 4));
 	printf("%s", (char *)ft_memset(leer2, 35, 4));
-	return 0;
+	return (0);
 }
 */

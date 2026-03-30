@@ -33,11 +33,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	const char *str = "mamc1234";
-	int c = (char)'c';
+	const char	*str = "mamc1234";
+	int			c;
 
+	c = (char)'c';
 	printf("%s\n", str);
 	write(1, ft_memchr(str, c, 6), 8);
 }

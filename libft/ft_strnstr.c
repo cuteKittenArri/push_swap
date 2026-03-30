@@ -18,15 +18,15 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	l;
 
 	i = 0;
-	if (! *little)
+	if (!*little)
 	{
 		return ((char *)big);
 	}
 	while (big[i] && len > i)
 	{
 		l = 0;
-		while ((i + l) < len && little[l] && big[i + l]
-			&& little[l] == big[i + l])
+		while ((i + l) < len && little[l] && big[i + l] && little[l] == big[i
+				+ l])
 		{
 			l++;
 		}
@@ -42,12 +42,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 /* #include <stdio.h>
 #include <bsd/string.h>
 
-int main(void)
+int	main(void)
 {
-	char string[] = "Hello world. 42 is the answer to the universe, to 
+	char string[] = "Hello world. 42 is the answer to the universe, to
 	everything, based on hitchhiker's guide to the galaxy";
 	char *ft_ptr = ft_strnstr(string, "galaxy", 150);
-    char *std_ptr = strnstr(string, "galaxy", 150);
+	char *std_ptr = strnstr(string, "galaxy", 150);
 	printf("%s \n", ft_ptr);
 	printf("%s \n", std_ptr);
 	printf("%zu", ft_strlen(string));

@@ -1,6 +1,6 @@
 #include "push_swap.h"
 
-t_node	*get_min(t_node	**stack)
+t_node	*get_min(t_node **stack)
 {
 	t_node	*curr_node;
 	t_node	*min_node;
@@ -9,10 +9,10 @@ t_node	*get_min(t_node	**stack)
 	curr_node = *stack;
 	min_node = NULL;
 	min_exists = 0;
-
 	while (curr_node)
 	{
-		if ((curr_node->index == -1) && ((!min_exists) || curr_node->value < min_node->value))
+		if ((curr_node->index == -1) && ((!min_exists)
+				|| curr_node->value < min_node->value))
 		{
 			min_node = curr_node;
 			min_exists = 1;

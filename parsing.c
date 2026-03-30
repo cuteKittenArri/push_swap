@@ -39,12 +39,12 @@ void	parse(int argc, char **argv, t_node **stack_a)
 	i = 1;
 	while (i < argc)
 	{
-		if(!valid_arg(argv[i]))
+		if (!valid_arg(argv[i]))
 			error_exit(stack_a, NULL);
 		tmp = ft_atoi(argv[i]);
 		if (tmp > 2147483647 || tmp < -2147483648)
 			error_exit(stack_a, NULL);
-		if (duplicate_checker(*stack_a, (int) tmp))
+		if (duplicate_checker(*stack_a, (int)tmp))
 			error_exit(stack_a, NULL);
 		add_back(stack_a, create_node((int)tmp));
 		i++;

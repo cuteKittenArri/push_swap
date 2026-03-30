@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 	unsigned int	len;
@@ -27,18 +27,18 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 }
 /*
 
-void    ft_called_function(unsigned int i, char *c)
+void	ft_called_function(unsigned int i, char *c)
 {
-    printf("Index: %d Character: %c\n", i, *c);
-    *c = '#';
+	printf("Index: %d Character: %c\n", i, *c);
+	*c = '#';
 }
 
-int main(void)
+int	main(void)
 {
-    char str[] = "hallo, Andy";
+	char	str[] = "hallo, Andy";
 
-    printf("%s\n", str);
-    ft_striteri(str, ft_called_function);
-    printf("%s\n", str);
+	printf("%s\n", str);
+	ft_striteri(str, ft_called_function);
+	printf("%s\n", str);
 }
 */

@@ -95,12 +95,16 @@ static int	ft_word_len(char const *s, char c)
 }
 /*
 
-int main(void)
+int	main(void)
 {
 	const char	*wohoo = "?david?ist?immer?noch?ne?geile?schnitte";
-	char	**its_aliiive = ft_split(wohoo, '?');
-	int	i = 0;
-	int j = 0;
+	char		**its_aliiive;
+	int			i;
+	int			j;
+
+	its_aliiive = ft_split(wohoo, '?');
+	i = 0;
+	j = 0;
 	while (its_aliiive[i])
 	{
 		printf("%s\n", its_aliiive[i]);

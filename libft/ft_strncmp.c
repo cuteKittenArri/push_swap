@@ -33,7 +33,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 /* #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int	main(void)
 {
 	printf("%d\n", ft_strncmp("1234", "1235", -200));
 	printf("%d", strncmp("1234", "1235", -200));

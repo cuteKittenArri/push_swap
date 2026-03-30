@@ -31,9 +31,11 @@ char	*ft_strrchr(const char *s, int c)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	char *lathyrus = ft_strrchr("mamapapa", 't');
+	char	*lathyrus;
+
+	lathyrus = ft_strrchr("mamapapa", 't');
 	write(1, lathyrus, 3);
 	printf("%s", lathyrus);
 }

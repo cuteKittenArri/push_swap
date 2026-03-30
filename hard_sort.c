@@ -89,9 +89,11 @@ void	sort_4(t_node **stack_a, t_node **stack_b)
 
 void	sort_5(t_node **stack_a, t_node **stack_b)
 {
+	int	pos;
+
 	while (stack_size(*stack_a) > 3)
 	{
-		int pos = min_pos(stack_a);
+		pos = min_pos(stack_a);
 		if (pos == 0)
 			pb(stack_a, stack_b);
 		else if (pos <= 2)

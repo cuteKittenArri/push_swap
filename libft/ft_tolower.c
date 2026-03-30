@@ -18,7 +18,7 @@ int	ft_tolower(int c)
 }
 /*
 
-int main(void)
+int	main(void)
 {
 	printf("%c", ft_tolower('u'));
 }*/

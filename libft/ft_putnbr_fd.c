@@ -35,7 +35,7 @@ void	ft_putnbr_fd(int n, int fd)
 }
 
 /*
-int main(void)
+int	main(void)
 {
 	ft_putnbr_fd(0, 1);
 }

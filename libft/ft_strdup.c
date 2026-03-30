@@ -31,14 +31,16 @@ char	*ft_strdup(const char *s)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-    const char *s1 = "halloStefan";
-    char *s2 = ft_strdup(s1);
-    const char *ss1 = "halloStefan";
-    char *ss2 = ft_strdup(ss1);
+	const char	*s1 = "halloStefan";
+	char		*s2;
+	const char	*ss1 = "halloStefan";
+	char		*ss2;
 
-    printf("%s\n", s2);
-    printf("%s\n", ss2);
+	s2 = ft_strdup(s1);
+	ss2 = ft_strdup(ss1);
+	printf("%s\n", s2);
+	printf("%s\n", ss2);
 }
 */

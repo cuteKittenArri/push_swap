@@ -30,7 +30,7 @@ long	ft_atoi(const char *nptr)
 		nptr++;
 	while ('0' <= *nptr && *nptr <= '9')
 	{
-		result = result * 10 +(*nptr -48);
+		result = result * 10 + (*nptr - 48);
 		nptr++;
 	}
 	return (result * minus);

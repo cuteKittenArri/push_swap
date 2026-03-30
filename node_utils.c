@@ -3,7 +3,7 @@
 
 int	stack_size(t_node *stack)
 {
-	int		size;
+	int	size;
 
 	size = 0;
 	while (stack)
@@ -23,7 +23,7 @@ t_node	*create_node(int value)
 		return (NULL);
 	new_node->value = value;
 	new_node->index = -1;
-	new_node -> next = NULL;
+	new_node->next = NULL;
 	return (new_node);
 }
 
@@ -45,9 +45,8 @@ void	add_back(t_node **stack, t_node *new_node)
 	if (*stack == NULL)
 		*stack = new_node;
 	else
-	 {
-	 	last = last_node(*stack);
-	 	last->next = new_node;
-	 }
+	{
+		last = last_node(*stack);
+		last->next = new_node;
+	}
 }
-

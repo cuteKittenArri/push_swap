@@ -39,7 +39,7 @@ char	ft_called_function(unsigned int i, char c)
 	return (i + 48);
 }
 
-int main(void)
+int	main(void)
 {
 	printf("%s", ft_strmapi("Hallo, Andy", ft_called_function));
 }

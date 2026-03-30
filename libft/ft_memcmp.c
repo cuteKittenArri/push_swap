@@ -37,13 +37,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 /* #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int	main(void)
 {
-    char s[] = {-127, 0, 127, 0};
-    char s2[] = {0, 0, 127, 0};
+	char s[] = {-127, 0, 127, 0};
+	char s2[] = {0, 0, 127, 0};
 	//char c = -128;
-    
-    printf("%d\n", ft_memcmp((const void *)s, (const void *)s2, 1));
+
+	printf("%d\n", ft_memcmp((const void *)s, (const void *)s2, 1));
 	printf("%d\n", memcmp((const void *)s, (const void *)s2, 2));
 	//printf("%c", c);
 } */

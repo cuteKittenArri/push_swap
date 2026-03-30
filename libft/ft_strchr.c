@@ -31,11 +31,13 @@ char	*ft_strchr(const char *s, int c)
 /* #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int	main(void)
 {
-	char s[] = "tripouille";
-	char s2[] = "tripouille";
-	char c = 't' + 256;
+	char	s[] = "tripouille";
+	char	s2[] = "tripouille";
+	char	c;
+
+	c = 't' + 256;
 	printf("%s\n", ft_strchr(s, 't' + 256) );
 	printf("%s\n", strchr(s2, 't' + 256));
 	printf("%c", c);

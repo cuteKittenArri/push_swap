@@ -18,7 +18,7 @@ void	ft_putstr_fd(char *s, int fd)
 }
 
 /*
-int main(void)
+int	main(void)
 {
 	ft_putstr_fd("hallo du toller evaluator", 1);
 }

@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	isrc = 0;
 	if (size <= dstlen)
 		return (size + ft_strlen(src));
-	while (idst < size -1 && src[isrc])
+	while (idst < size - 1 && src[isrc])
 	{
 		dst[idst] = src[isrc];
 		idst++;
@@ -34,15 +34,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	char dest[30] = "Stefan";
-	char dest1[30] = "Stefan";
-	char *src = &dest[2];//"8444papa54321";
-	char *src1 = &dest1[2];//"8444papa54321";
-	size_t size = 20;
-	unsigned int lol = strlcat(dest, src, size);
-	unsigned int lol1 = ft_strlcat(dest1, src1, size);
+	char			dest[30] = "Stefan";
+	char			dest1[30] = "Stefan";
+	char			*src;
+	char			*src1;
+	size_t			size;
+	unsigned int	lol;
+	unsigned int	lol1;
+
+	src = &dest[2];//"8444papa54321";
+	src1 = &dest1[2];//"8444papa54321";
+	size = 20;
+	lol = strlcat(dest, src, size);
+	lol1 = ft_strlcat(dest1, src1, size);
 	printf("Orig Return: %d\n", lol);
 	printf("Orig Return: %s\n", dest);
 	printf("Orig Return: %s\n", src);
@@ -55,7 +61,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dstlen;
 	size_t	srclen;
-	
+
 	trottel = dst;
 	srclen = ft_strlen(src);
 	dstlen = ft_strlen(dst);

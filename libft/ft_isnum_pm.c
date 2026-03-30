@@ -12,9 +12,10 @@
 
 #include "libft.h"
 
-int	ft_isnum_pm(char *str){
+int	ft_isnum_pm(char *str)
+{
 	size_t	i;
-	
+
 	i = 1;
 	if (!('0' <= str[0] && str[0] <= '9') || str[0] != '-')
 		return (0);

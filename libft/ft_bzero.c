@@ -28,11 +28,11 @@ void	ft_bzero(void *s, size_t n)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	char lol[] = "#############";
-	void *leer;
-	void *leer2;
+	char	lol[] = "#############";
+	void	*leer;
+	void	*leer2;
 
 	leer = lol;
 	leer2 = lol;

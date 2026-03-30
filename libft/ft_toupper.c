@@ -18,7 +18,7 @@ int	ft_toupper(int c)
 }
 /*
 
-int main(void)
+int	main(void)
 {
 	printf("%c", ft_toupper('C'));
 }*/

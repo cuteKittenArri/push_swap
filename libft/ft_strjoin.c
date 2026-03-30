@@ -27,11 +27,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 }
 /*
 
-int main(void)
+int	main(void)
 {
-	const char *s1 = "";
-	const char *s2 = "";
-	
+	const char	*s1 = "";
+	const char	*s2 = "";
+
 	write(1, s1, 9);
 	printf("\n");
 	write(1, ft_strjoin(s1, s2), 8);

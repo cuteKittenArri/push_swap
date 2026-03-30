@@ -4,6 +4,7 @@
 static void	push(t_node **src, t_node **dest)
 {
 	t_node	*tmp;
+
 	if (!src || !(*src))
 		return ;
 	tmp = *src;

@@ -5,7 +5,7 @@ static void	swap(t_node **stack)
 {
 	int	tmp_val;
 	int	tmp_idx;
-	
+
 	if (!stack || !*stack || !((*stack)->next))
 		return ;
 	tmp_val = (*stack)->value;

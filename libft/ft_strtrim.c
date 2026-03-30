@@ -46,9 +46,11 @@ static int	ft_howmuch(const char *set, char c)
 
 /* #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-	char	*s = ft_strtrim("   xxxtripouille   xxx", " x");
+	char	*s;
+
+	s = ft_strtrim("   xxxtripouille   xxx", " x");
 	printf("%s", s);
 	free(s);
 }
