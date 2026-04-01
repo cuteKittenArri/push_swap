@@ -6,11 +6,12 @@
 # include "limits.h"
 # include "stdbool.h"
 # include "unistd.h"
+#include <stdatomic.h>
 
 typedef struct s_node
 {
-	intvalue;
-	int				index;
+	int						value;
+	int						index;
 	struct s_node	*next;
 }					t_node;
 
@@ -36,7 +37,7 @@ void				pa(t_node **stack_a, t_node **stack_b);
 void				pb(t_node **stack_a, t_node **stack_b);
 void				parse(int argc, char **argv, t_node **stack_a);
 int					stack_size(t_node *stack);
-t_node				*create_node(int value);
+t_node			*create_node(int value);
 void				add_back(t_node **stack, t_node *new_node);
 int					is_sorted(t_node **stack);
 
