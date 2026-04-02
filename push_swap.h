@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: stmuller <stmuller@student.42vienna.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/02 22:30:08 by stmuller          #+#    #+#             */
+/*   Updated: 2026/04/02 22:34:12 by stmuller         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
@@ -6,14 +17,14 @@
 # include "limits.h"
 # include "stdbool.h"
 # include "unistd.h"
-#include <stdatomic.h>
+# include <stdatomic.h>
 
 typedef struct s_node
 {
 	int						value;
 	int						index;
-	struct s_node	*next;
-}					t_node;
+	struct s_node			*next;
+}	t_node;
 
 void				error_exit(t_node **stack_a, t_node **stack_b);
 void				free_stack(t_node **stack);
@@ -37,7 +48,7 @@ void				pa(t_node **stack_a, t_node **stack_b);
 void				pb(t_node **stack_a, t_node **stack_b);
 void				parse(int argc, char **argv, t_node **stack_a);
 int					stack_size(t_node *stack);
-t_node			*create_node(int value);
+t_node				*create_node(int value);
 void				add_back(t_node **stack, t_node *new_node);
 int					is_sorted(t_node **stack);
 

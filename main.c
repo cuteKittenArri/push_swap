@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: stmuller <stmuller@student.42vienna.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/02 22:29:50 by stmuller          #+#    #+#             */
+/*   Updated: 2026/04/02 22:29:52 by stmuller         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
@@ -29,7 +40,7 @@ int	main(int argc, char **argv)
 	t_node	*stack_b;
 
 	if (argc < 2)
-		return (0);
+		return (1);
 	stack_a = NULL;
 	stack_b = NULL;
 	parse(argc, argv, &stack_a);
