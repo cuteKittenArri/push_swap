@@ -58,6 +58,8 @@ The program prints the list of operations to stdout, one per line. If the input 
 
 ### Testing
 
+**IMPORTANT:** the program only handles multiple ARGs, not string with multiple numbers. Only inputs with ONE(or less) signs before them(+/-).
+
 You can pipe the output into a checker (e.g. the official 42 checker or `push_swap_visualizer`) to verify correctness:
 
 ```bash
